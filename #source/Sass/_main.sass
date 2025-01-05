@@ -1,0 +1,41 @@
+.main
+	&__container
+		max-width: 1240px
+		margin: 0 auto
+	&__content
+		padding: 85px 20px 100px
+	&__title
+		color: #212529
+		font-family: Poppins
+		font-size: 35px
+		font-style: normal
+		font-weight: 700
+		line-height: 71.429%
+		margin: 0 0 40px 0
+	&__articles
+		display: grid
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+		grid-gap: 10px
+		margin: 0 -10px
+	&__button-section
+		display: flex
+		justify-content: center
+		margin: 45px auto 100px
+	&__load-button
+		border-radius: 3px
+		background: #212529
+		color: #F8F9FA
+		text-align: center
+		font-family: Poppins
+		font-size: 12px
+		font-style: normal
+		font-weight: 500
+		line-height: 208.333%
+		padding: 10px 50px
+		opacity: 0.9
+		transition: opacity 0.3s
+		&:hover
+			opacity: 1
+		&:active
+			transform: translateY(1px)
+			opacity: 0.8

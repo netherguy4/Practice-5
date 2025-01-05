@@ -1,0 +1,176 @@
+.header
+	background: url(../Img/header.jpg) no-repeat center -250px/cover fixed
+	&__container
+		max-width: 1240px
+		margin: 0 auto
+	&__content
+		padding: 40px 20px
+	&__nav-section
+		display: flex
+		position: relative
+		justify-content: space-between
+		align-items: center
+		margin: 0 0 200px 0
+	&__logo
+		color: #F8F9FA
+		font-family: Poppins
+		font-size: 18px
+		font-style: normal
+		font-weight: 700
+		line-height: 138.889%
+		user-select: none
+	&__nav
+		flex: 0 0 25%
+		user-select: none
+	&__search-form
+		position: absolute
+		right: 0
+		top: 0
+		border-radius: 25px
+		border: #F8F9FA 1px solid
+		overflow: hidden
+		width: 0px
+		visibility: hidden
+		padding: 0 10px
+		transition: width .5s
+		&_active
+			width: 300px
+			visibility: visible
+	&__search-field
+		background: none
+		height: 25px
+		color: #F8F9FA
+		font-size: 20px
+	&__search-img
+		position: absolute
+		top: 0
+		right: 0
+		transform: translate(-100%, 50%)
+		filter: brightness(0) saturate(100%) invert(83%) sepia(99%) saturate(2%) hue-rotate(208deg) brightness(99%) contrast(101%)
+		opacity: 0.5
+		cursor: pointer
+		&:hover
+			opacity: 1
+			filter: brightness(0) saturate(100%) invert(100%) sepia(7%) saturate(4%) hue-rotate(205deg) brightness(99%) contrast(98%)
+	&__list
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: relative
+	&__item
+		position: relative
+		&-search
+			padding: 10px
+			margin: -10px
+			border-radius: 50%
+			cursor: pointer
+			opacity: 0.5
+			justify-self: flex-end
+			&:hover
+				opacity: 1
+			&_active
+				opacity: 1
+	&__divider-line
+		width: 1px
+		height: 25px
+		background: rgba(229, 229, 229, 0.50)
+	&__link
+		position: relative
+		color: rgba(248, 249, 250, 0.50)
+		font-family: Poppins
+		font-size: 12px
+		font-style: normal
+		font-weight: 500
+		line-height: 208.333%
+		cursor: pointer
+		display: block
+		img
+			transform: translateY(200%)
+			margin: 0 0 0 10px
+			filter: brightness(0) saturate(100%) invert(83%) sepia(99%) saturate(2%) hue-rotate(208deg) brightness(99%) contrast(101%)
+			opacity: 0.5
+		.img_active
+			transform: translateY(200%) scaleY(-1)
+		&:hover
+			color: #F8F9FA
+			img
+				opacity: 1
+				filter: brightness(0) saturate(100%) invert(100%) sepia(7%) saturate(4%) hue-rotate(205deg) brightness(99%) contrast(98%)
+		&::after
+			transition: width .3s
+			position: absolute
+			bottom: -4px
+			left: 50%
+			transform: translateX(-50%)
+			content: ''
+			display: block
+			width: 0%
+			height: 2px
+			background: #DDBEA9
+		&:hover::after
+			width: 100%
+		&_active
+			color: #F8F9FA
+			&::after
+				position: absolute
+				bottom: -4px
+				left: 50%
+				transform: translateX(-50%)
+				content: ''
+				display: block
+				width: 100%
+				height: 2px
+				background: #DDBEA9
+			img
+				opacity: 1
+				filter: brightness(0) saturate(100%) invert(100%) sepia(7%) saturate(4%) hue-rotate(205deg) brightness(99%) contrast(98%)
+	&__context-menu
+		position: absolute
+		left: 0
+		top: 120%
+		display: flex
+		flex-direction: column
+		overflow: hidden
+		height: 0
+		transition: height .2s
+		padding: 0 20px
+		margin: 0 -20px
+		&_active
+			height: 400%
+	&__context-list
+		display: flex
+		flex-direction: column
+	&__context-item
+	&__context-link
+		color: rgba(248, 249, 250, 0.50)
+		font-family: Poppins
+		font-size: 12px
+		font-style: normal
+		font-weight: 500
+		line-height: 208.333%
+		cursor: pointer
+		display: block
+		padding: 0 20px
+		margin: 0 -20px
+		&:hover
+			color: #F8F9FA
+	&__title-section
+		cursor: default
+		user-select: none
+	&__title
+		color: #F8F9FA
+		font-family: Poppins
+		font-size: 25px
+		font-style: normal
+		font-weight: 700
+		line-height: 160%
+		max-width: 605px
+		margin: 0 0 15px 0
+	&__subtitle
+		color: #E5E5E5
+		font-family: Poppins
+		font-size: 12px
+		font-style: normal
+		font-weight: 300
+		line-height: 166.667%
+		max-width: 357px
