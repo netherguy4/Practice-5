@@ -127,8 +127,8 @@ h6 {
 }
 .header__nav {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
+      -ms-flex: 0 1 300px;
+          flex: 0 1 300px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -552,8 +552,8 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 25%;
-          flex: 0 1 25%;
+      -ms-flex: 0 1 250px;
+          flex: 0 1 250px;
 }
 .footer__link {
   color: rgba(248, 249, 250, 0.5);
