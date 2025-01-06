@@ -1,4 +1,11 @@
 .main
+	position: relative
+	&__container
+		max-width: 1070px
+		margin: 0 auto
+	&__content
+		padding: 80px 20px 150px
+		display: flex
 	&__pages-counter
 		color: #E5E5E5
 		text-align: center
@@ -8,4 +15,14 @@
 		font-weight: 400
 		line-height: 166.667%
 		letter-spacing: 2.4px
-		margin: 40px 0 20px
+		position: absolute
+		top: 40px
+		left: 0
+		right: 0
+	&__sidebar
+		flex: 0 1 calc(423/1028*100%)
+		padding: 0 20px 0 0
+	&__articles
+		display: flex
+		flex-direction: column
+		gap: 40px
