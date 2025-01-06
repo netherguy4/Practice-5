@@ -11,7 +11,7 @@ header.addEventListener('click', (e) => {
 		header.querySelector('.header__search-form').classList.add('header__search-form_active');
 		setTimeout(() => {
 			header.querySelector('.header__search-field').focus();
-		}, "300")
+		}, "500")
 		header.querySelector('.header__search-field').addEventListener('blur', restoreNav);
 	}
 	function restoreNav() {
