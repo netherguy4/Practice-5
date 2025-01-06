@@ -37,6 +37,7 @@
 		@media screen and (max-width: 480px)
 			margin: 20px 0 0
 			min-width: 100%
+			flex: 1 1 auto
 	&__search-form
 		position: absolute
 		right: 0
@@ -48,9 +49,13 @@
 		visibility: hidden
 		padding: 0 10px
 		transition: width .5s
+		@media screen and (max-width: 480px)
+			transform: translate(0, 170%)
 		&_active
 			width: 300px
 			visibility: visible
+			@media screen and (max-width: 480px)
+				width: 100%
 	&__search-field
 		background: none
 		height: 25px
@@ -181,9 +186,13 @@
 		font-weight: 700
 		line-height: 160%
 		margin: 200px 0 15px 0
+		@media screen and (max-width: 480)
+			margin: 66px 0 15px 0
 		&_center
 			text-align: center
 			margin: 150px 0 160px
+			@media screen and (max-width: 480)
+				margin: 50px 0 50px
 	&__subtitle
 		color: #E5E5E5
 		font-family: Poppins
