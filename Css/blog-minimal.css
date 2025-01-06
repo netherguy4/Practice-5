@@ -105,11 +105,11 @@ h6 {
   background-color: rgba(0, 0, 0, 0.2);
 }
 .header__container {
-  max-width: 1240px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 .header__content {
-  padding: 40px 20px;
+  padding: 40px 40px;
 }
 .header__nav-section {
   display: -webkit-box;
@@ -233,6 +233,7 @@ h6 {
   visibility: visible;
 }
 .header__search-field {
+  max-width: 75%;
   font-family: Poppins;
   background: none;
   height: 25px;
