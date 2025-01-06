@@ -58,14 +58,16 @@
 		overflow: hidden
 		width: 0px
 		visibility: hidden
+		opacity: 0
 		padding: 10px 0 10px 10px
-		transition: width .3s
+		transition: width .3s, opacity .3s
 		transform: translate(0, -10px)
 		@media screen and (max-width: 480px)
 			transform: translate(-20px, 73%)
 			.header__search-img
 				transform: translate(20px, 0) scale(1)
 		&_active
+			opacity: 1
 			width: 320px
 			@media screen and (max-width: 480px)
 				width: 100%
@@ -74,6 +76,7 @@
 		&_visible
 			visibility: visible
 	&__search-field
+		font-family: Poppins
 		background: none
 		height: 25px
 		color: rgba(229, 229, 229, 1)
