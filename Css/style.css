@@ -123,6 +123,14 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .header__nav-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .header__logo {
   color: #F8F9FA;
   font-family: Poppins;
@@ -143,6 +151,12 @@ h6 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media screen and (max-width: 480px) {
+  .header__nav {
+    margin: 20px 0 0;
+    min-width: 100%;
+  }
 }
 .header__search-form {
   position: absolute;

@@ -21,6 +21,8 @@
 		justify-content: space-between
 		align-items: center
 		// margin: 0 0 200px 0
+		@media screen and (max-width: 480px)
+			flex-direction: column
 	&__logo
 		color: #F8F9FA
 		font-family: Poppins
@@ -32,6 +34,9 @@
 	&__nav
 		flex: 0 1 300px
 		user-select: none
+		@media screen and (max-width: 480px)
+			margin: 20px 0 0
+			min-width: 100%
 	&__search-form
 		position: absolute
 		right: 0
