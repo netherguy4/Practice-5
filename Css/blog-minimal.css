@@ -91,6 +91,29 @@ h6 {
 
 /*--------------------*/
 .header {
+  background: url(../Img/header2.jpg) no-repeat center -800px/auto auto fixed;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pink-dot {
+  color: #DDBEA9;
+}
+
+.disabled {
+  visibility: hidden;
+}
+
+.header {
   border-radius: 5px;
   position: relative;
 }
@@ -471,27 +494,4 @@ h6 {
   line-height: 166.667%;
   letter-spacing: 2.4px;
   margin: 40px 0 20px;
-}
-
-.wrapper {
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.pink-dot {
-  color: #DDBEA9;
-}
-
-.disabled {
-  visibility: hidden;
-}
-
-.header {
-  background: url(../Img/header2.jpg) no-repeat center -800px/auto auto fixed;
 }
