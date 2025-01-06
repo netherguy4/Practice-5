@@ -34,15 +34,20 @@
 	&__nav
 		flex: 0 1 300px
 		user-select: none
+		opacity: 1
+		transition: opacity .3s
 		@media screen and (max-width: 480px)
 			margin: 20px 0 0
 			min-width: 100%
 			flex: 1 1 auto
+		&_disabled
+			opacity: 0
 	&__search-form
 		background: rgba(0, 0, 0, 0.4)
 		position: absolute
-		right: -20px
-		top: 0
+		z-index: 3
+		right: -21px
+		top: -1px
 		display: flex
 		justify-content: space-between
 		border-radius: 25px
@@ -54,18 +59,24 @@
 		transition: width .3s
 		transform: translate(0, -10px)
 		@media screen and (max-width: 480px)
-			transform: translate(-20px, 80%)
+			transform: translate(-20px, 73%)
+			.header__search-img
+				transform: translate(20px, 0) scale(1.3)
 		&_active
-			width: 300px
-			visibility: visible
+			width: 320px
 			@media screen and (max-width: 480px)
 				width: 100%
+				.header__search-img
+					transform: translate(0, 0) scale(1.3)
+		&_visible
+			visibility: visible
 	&__search-field
 		background: none
 		height: 25px
 		color: rgba(229, 229, 229, 1)
 		font-size: 20px
 	&__search-img
+		transition: transform .3s
 		position: absolute
 		top: 5px
 		right: 10px
