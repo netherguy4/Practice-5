@@ -92,6 +92,20 @@ h6 {
 /*--------------------*/
 .header {
   background: url(../Img/header.jpg) no-repeat center -250px/cover fixed;
+  border-radius: 5px;
+  position: relative;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.header_2 {
+  background: url(../Img/header2.jpg) no-repeat center -800px/cover fixed;
 }
 .header__container {
   max-width: 1240px;
@@ -111,7 +125,6 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 0 200px 0;
 }
 .header__logo {
   color: #F8F9FA;
@@ -331,6 +344,7 @@ h6 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  position: relative;
 }
 .header__title {
   color: #F8F9FA;
@@ -339,8 +353,11 @@ h6 {
   font-style: normal;
   font-weight: 700;
   line-height: 160%;
-  max-width: 605px;
-  margin: 0 0 15px 0;
+  margin: 200px 0 15px 0;
+}
+.header__title_center {
+  text-align: center;
+  margin: 150px 0 160px;
 }
 .header__subtitle {
   color: #E5E5E5;
@@ -349,7 +366,7 @@ h6 {
   font-style: normal;
   font-weight: 300;
   line-height: 166.667%;
-  max-width: 357px;
+  margin: 0 0 60px;
 }
 
 .main__container {
@@ -407,6 +424,17 @@ h6 {
           transform: translateY(1px);
   opacity: 0.8;
 }
+.main__pages-counter {
+  color: #E5E5E5;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 166.667%;
+  letter-spacing: 2.4px;
+  margin: -20px 0 0;
+}
 
 .article {
   display: -webkit-box;
@@ -443,7 +471,7 @@ h6 {
   left: 0;
 }
 .article__image::after {
-  content: "CREATIVE";
+  content: "creative";
   top: 30px;
   right: 30px;
   position: absolute;
@@ -457,6 +485,7 @@ h6 {
   border-radius: 3px;
   background: rgba(33, 37, 41, 0.3);
   padding: 2px 11px;
+  text-transform: uppercase;
 }
 .article__content {
   -webkit-box-flex: 1;

@@ -1,5 +1,17 @@
 .header
 	background: url(../Img/header.jpg) no-repeat center -250px/cover fixed
+	border-radius: 5px
+	position: relative
+	&::before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: rgba(0, 0, 0, 0.2)
+	&_2
+		background: url(../Img/header2.jpg) no-repeat center -800px/cover fixed
 	&__container
 		max-width: 1240px
 		margin: 0 auto
@@ -10,7 +22,7 @@
 		position: relative
 		justify-content: space-between
 		align-items: center
-		margin: 0 0 200px 0
+		// margin: 0 0 200px 0
 	&__logo
 		color: #F8F9FA
 		font-family: Poppins
@@ -157,6 +169,7 @@
 	&__title-section
 		cursor: default
 		user-select: none
+		position: relative
 	&__title
 		color: #F8F9FA
 		font-family: Poppins
@@ -164,8 +177,10 @@
 		font-style: normal
 		font-weight: 700
 		line-height: 160%
-		max-width: 605px
-		margin: 0 0 15px 0
+		margin: 200px 0 15px 0
+		&_center
+			text-align: center
+			margin: 150px 0 160px
 	&__subtitle
 		color: #E5E5E5
 		font-family: Poppins
@@ -173,4 +188,4 @@
 		font-style: normal
 		font-weight: 300
 		line-height: 166.667%
-		max-width: 357px
+		margin: 0 0 60px
