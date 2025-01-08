@@ -1,0 +1,30 @@
+.main
+	&__container
+		max-width: 1280px
+		margin: 0 auto
+	&__content
+		padding: 115px 20px 40px
+		display: flex
+		flex-direction: column
+	&__article-section
+		margin: 0 0 80px
+	&__images-section
+		display: flex
+		flex-wrap: wrap
+		// flex: 0 1 400px
+		margin: 0 0 80px
+		gap: 30px
+	&__image
+		position: relative
+		flex: 1 1 45%
+		min-width: 300px
+		padding: 0 0 400px
+		&_wide
+			// max-width: 100%
+	&__image-img
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		object-fit: cover
