@@ -1,5 +1,3 @@
-"use strict"
-
 document.addEventListener("DOMContentLoaded", () => {
 	const images = new Array();
 
@@ -12,8 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	// Предварительная загрузка нужных картинок
 	preloadImages(
-		"header.jpg",
-		"header2.jpg",
-		"header3.jpg"
+		"Img/header.webp",
+		"Img/header2.webp",
+		"Img/header3.webp"
 	);
 });
