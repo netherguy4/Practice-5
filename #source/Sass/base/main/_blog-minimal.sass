@@ -6,6 +6,9 @@
 	&__content
 		padding: 80px 20px 150px
 		display: flex
+		gap: 20px
+		@media (max-width: 750px)
+			flex-direction: column
 	&__pages-counter
 		color: #E5E5E5
 		text-align: center
@@ -20,8 +23,9 @@
 		left: 0
 		right: 0
 	&__sidebar
-		flex: 0 1 calc(423/1028*100%)
-		padding: 0 20px 0 0
+		@media (min-width: 750px)
+			flex: 0 1 calc(423/1028*100%)
+			// padding: 0 20px 0 0
 	&__articles
 		display: flex
 		flex-direction: column
