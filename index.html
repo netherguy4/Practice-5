@@ -10,88 +10,92 @@
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class="wrapper index-wrapper">
 		<header class="header">
-			<div class="header__container">
+			<div class="container">
 				<div class="header__content">
-					<section class="header__nav-section">
-						<div class="header__logo">
-							VENCE<span class="pink-dot">.</span>
-						</div>
+					<div class="header__logo">
+						VENCE<span class="pink-dot">.</span>
+					</div>
+					<nav class="header__nav">
 						<form class="header__search-form" action="#">
 							<input class="header__search-field" name="search" type="text">
 							<img class="header__search-img" src="Img/search.svg" alt="search">
 						</form>
-						<nav class="header__nav">
-							<ul class="header__list">
-								<li class="header__item">
-									<a href="index.html" class="header__link header__link_active">Home</a>
-								</li>
-								<li class="header__item">
-									<a class="header__link">Inspiration<img src="Img/spoiler.svg" alt="">
-										<div class="header__context-menu">
-											<ul class="header__context-list">
-												<li class="header__context-item">
-													<a href="#" class="header__context-link">Web Design</a>
-												</li>
-												<li class="header__context-item">
-													<a href="#" class="header__context-link">Photography</a>
-												</li>
-												<li class="header__context-item">
-													<a href="#" class="header__context-link">Illustration</a>
-												</li>
-												<li class="header__context-item">
-													<a href="#" class="header__context-link">Art</a>
-												</li>
-											</ul>
-										</div>
-									</a>
-								</li>
-								<li class="header__item">
-									<a class="header__link">Courses<img src="Img/spoiler.svg" alt="">
-										<div class="header__context-menu">
-											<ul class="header__context-list">
-												<li class="header__context-item">
-													<a href="#" class="header__context-link">Web Design</a>
-												</li>
-												<li class="header__context-item">
-													<a href="#" class="header__context-link">Photography</a>
-												</li>
-												<li class="header__context-item">
-													<a href="#" class="header__context-link">Illustration</a>
-												</li>
-												<li class="header__context-item">
-													<a href="#" class="header__context-link">Art</a>
-												</li>
-											</ul>
-										</div>
-									</a>
-								</li>
-								<li class="header__item">
-									<a href="page.html" class="header__link">Blog</a>
-								</li>
-								<li class="header__item">
-									<div class="header__divider-line"></div>
-								</li>
-								<li class="header__item header__item-search">
-									<img src="Img/search.svg" alt="search">
-							</ul>
-						</nav>
-					</section>
-					<section class="header__title-section">
-						<h2 class="header__title">I Like to Keep Things Simple to Appreciate the <br> Details</h2>
-						<p class="header__subtitle">Many years ago, I worked for my parents who own a video <br>
-							production company.</p>
-					</section>
+						<ul class="header__list">
+							<li class="header__item">
+								<a href="index.html" class="header__link header__link_active">Home</a>
+							</li>
+							<li class="header__item">
+								<button type="button" class="header__button">Inspiration<img src="Img/spoiler.svg"
+										alt=""></button>
+								<div class="header__context-menu">
+									<ul class="header__context-list">
+										<li class="header__context-item">
+											<a href="#" class="header__context-link">Web Design</a>
+										</li>
+										<li class="header__context-item">
+											<a href="#" class="header__context-link">Photography</a>
+										</li>
+										<li class="header__context-item">
+											<a href="#" class="header__context-link">Illustration</a>
+										</li>
+										<li class="header__context-item">
+											<a href="#" class="header__context-link">Art</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header__item">
+								<button type="button" class="header__button">Courses<img src="Img/spoiler.svg" alt=""></button>
+								<div class="header__context-menu">
+									<ul class="header__context-list">
+										<li class="header__context-item">
+											<a href="#" class="header__context-link">Web Design</a>
+										</li>
+										<li class="header__context-item">
+											<a href="#" class="header__context-link">Photography</a>
+										</li>
+										<li class="header__context-item">
+											<a href="#" class="header__context-link">Illustration</a>
+										</li>
+										<li class="header__context-item">
+											<a href="#" class="header__context-link">Art</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header__item">
+								<a href="page.html" class="header__link">Blog</a>
+							</li>
+							<li class="header__item">
+								<div class="header__divider-line"></div>
+							</li>
+							<li class="header__item header__item-search">
+								<img src="Img/search.svg" alt="search">
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</header>
-		<main class="main">
-			<div class="main__container">
-				<div class="main__content">
-					<h2 class="main__title">Articles</h2>
-					<section class="main__articles">
-						<a class="article" href="blog-minimal.html">
+		<div class="hero index-wrapper__hero">
+			<div class="container">
+				<div class="hero__content">
+					<h2 class="hero__title">I Like to Keep Things Simple to Appreciate the <br> Details</h2>
+					<p class="hero__subtitle">Many years ago, I worked for my parents who own a video <br>
+						production company.</p>
+				</div>
+			</div>
+		</div>
+		<main class="index">
+			<div class="container">
+				<div class="index__content">
+					<section class="index__title-section">
+						<h2 class="index__title">Articles</h2>
+					</section>
+					<section class="index__articles">
+						<article class="article article_vertical">
+							<a class="article__link" href="blog-minimal.html"></a>
 							<section class="article__image">
 								<img src="Img/article__img1.webp" alt="" class="article__image_img">
 							</section>
@@ -102,8 +106,10 @@
 									production company.</p>
 								<div class="article__author">By: Peter Rowardson</div>
 							</section>
-						</a>
-						<a class="article" href="blog-minimal.html">
+						</article>
+						<article class="article article_vertical">
+							<a class="article__link" href="blog-minimal.html"></a>
+							<a class="article__link" href="blog-minimal.html"></a>
 							<section class="article__image">
 								<img src="Img/article__img2.webp" alt="" class="article__image_img">
 							</section>
@@ -114,8 +120,10 @@
 									production company.</p>
 								<div class="article__author">By: Peter Rowardson</div>
 							</section>
-						</a>
-						<a class="article" href="blog-minimal.html">
+						</article>
+						<article class="article article_vertical">
+							<a class="article__link" href="blog-minimal.html"></a>
+							<a class="article__link" href="blog-minimal.html"></a>
 							<section class="article__image">
 								<img src="Img/article__img3.webp" alt="" class="article__image_img">
 							</section>
@@ -126,8 +134,10 @@
 									production company.</p>
 								<div class="article__author">By: Peter Rowardson</div>
 							</section>
-						</a>
-						<a class="article" href="blog-minimal.html">
+						</article>
+						<article class="article article_vertical">
+							<a class="article__link" href="blog-minimal.html"></a>
+							<a class="article__link" href="blog-minimal.html"></a>
 							<section class="article__image">
 								<img src="Img/article__img4.webp" alt="" class="article__image_img">
 							</section>
@@ -138,8 +148,10 @@
 									production company.</p>
 								<div class="article__author">By: Peter Rowardson</div>
 							</section>
-						</a>
-						<a class="article" href="blog-minimal.html">
+						</article>
+						<article class="article article_vertical">
+							<a class="article__link" href="blog-minimal.html"></a>
+							<a class="article__link" href="blog-minimal.html"></a>
 							<section class="article__image">
 								<img src="Img/article__img5.webp" alt="" class="article__image_img">
 							</section>
@@ -150,8 +162,10 @@
 									production company.</p>
 								<div class="article__author">By: Peter Rowardson</div>
 							</section>
-						</a>
-						<a class="article" href="blog-minimal.html">
+						</article>
+						<article class="article article_vertical">
+							<a class="article__link" href="blog-minimal.html"></a>
+							<a class="article__link" href="blog-minimal.html"></a>
 							<section class="article__image">
 								<img src="Img/article__img6.webp" alt="" class="article__image_img">
 							</section>
@@ -162,16 +176,16 @@
 									production company. </p>
 								<div class="article__author">By: Peter Rowardson</div>
 							</section>
-						</a>
+						</article>
 					</section>
-					<section class="main__button-section">
-						<button type="button" class="main__load-button">More Articles</button>
+					<section class="index__button-section">
+						<button type="button" class="index__load-button">More Articles</button>
 					</section>
 				</div>
 			</div>
 		</main>
 		<footer class="footer">
-			<div class="footer__container">
+			<div class="container">
 				<div class="footer__content">
 					<section class="footer__section">
 						<div class="footer__logo">

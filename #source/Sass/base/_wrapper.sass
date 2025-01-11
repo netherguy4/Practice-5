@@ -1,0 +1,25 @@
+.wrapper
+	min-height: 100vh
+	display: flex
+	flex-direction: column
+
+.index-wrapper
+	&__hero
+		background: url(../Img/header.webp) no-repeat center -230px/cover fixed
+		padding: 265px 0 105px
+		@media (orientation: portrait)
+			background: url(../Img/header.webp) no-repeat center -230px/auto auto fixed
+
+.blog-wrapper
+	&__hero
+		padding: 215px 0 195px
+		background: url(../Img/header2.webp) no-repeat center 78%/auto auto fixed
+		@media screen and (min-width: 1600px)
+			background: url(../Img/header2.webp) no-repeat center 60%/100% auto fixed
+
+.page-wrapper
+	&__hero
+		padding: 215px 0 195px
+		background: url(../Img/header3.webp) no-repeat center -450px/cover fixed
+		// @media screen and (min-width: 1600px)
+		// 	background: url(../Img/header3.webp) no-repeat center 60%/cover fixed

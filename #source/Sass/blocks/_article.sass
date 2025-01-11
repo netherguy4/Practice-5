@@ -1,12 +1,20 @@
 .article
-	display: flex
-	flex-direction: column
-	cursor: pointer
+	position: relative
 	padding: 10px
 	border-radius: 5px
 	transition: box-shadow 0.3s
 	&:hover
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+	&_vertical
+		display: flex
+		flex-direction: column
+	&__link
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 2
 	&__image
 		position: relative
 		padding: calc(250/393*100%) 0 0
@@ -64,7 +72,6 @@
 		font-weight: 300
 		line-height: 166.667%
 		margin: 0 0 30px 0
-		// align-items: flex-start
 	&__author
 		color: #495057
 		font-family: Poppins
