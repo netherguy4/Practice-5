@@ -17,14 +17,15 @@
 	&__image
 		position: relative
 		flex: 1 1 45%
-		min-width: 300px
+		min-width: 400px
 		padding: 0 0 400px
-		&_wide
-			// max-width: 100%
+		@media (max-width: 450px)
+			min-width: 200px
 	&__image-img
 		position: absolute
 		top: 0
 		left: 0
 		width: 100%
 		height: 100%
+		border-radius: 5px
 		object-fit: cover
