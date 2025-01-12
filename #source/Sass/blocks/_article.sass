@@ -22,6 +22,10 @@
 	&__image
 		position: relative
 		flex: 0 0 287px
+		min-height: 200px
+		&_vertical
+			position: relative
+			flex: 0 0 250px
 		&_img
 			width: 100%
 			height: 100%
@@ -64,11 +68,31 @@
 		line-height: 160%
 		padding: 15px 0
 		flex: 1 1 auto
+		&_minimal
+			color: #212529
+			font-family: Poppins
+			font-size: 16px
+			font-style: normal
+			font-weight: 500
+			line-height: 156.25%
+			padding: 15px 0
 	&__text
-		margin: 0 0 30px 0
+		margin: 0 0 30px
+		flex: 1 1 auto
 	&__credits
 		display: flex
+		position: relative
 		justify-content: space-between
+		justify-self: flex-end
+		&::before
+			position: absolute
+			display: block
+			content: ''
+			top: -15px
+			left: 0
+			right: 0
+			height: 1px
+			background: #E5E5E5
 	&__author
 
 	&__likes
