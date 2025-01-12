@@ -513,7 +513,6 @@ h6 {
 
 .hero {
   position: relative;
-  border-radius: 5px;
   cursor: default;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -521,7 +520,6 @@ h6 {
           user-select: none;
 }
 .hero::before {
-  border-radius: 5px;
   content: "";
   position: absolute;
   top: 0;
