@@ -114,6 +114,14 @@ h6 {
           align-items: center;
   position: relative;
 }
+@media (max-width: 490px) {
+  .footer__section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .footer__section:first-child {
   margin: 0 0 80px;
 }
@@ -150,9 +158,19 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 250px;
-          flex: 0 1 250px;
+}
+@media (max-width: 490px) {
+  .footer__list {
+    gap: 20px;
+    width: 90%;
+  }
+}
+@media (min-width: 491px) {
+  .footer__list {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 250px;
+            flex: 0 1 250px;
+  }
 }
 .footer__link {
   color: rgba(248, 249, 250, 0.5);
